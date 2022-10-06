@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="estilos/style.css">
+  
+</head>
+<body>
+    <header id="tasks-container">
+        <div id="tasks-header">
+            <h1>Esta é uma lista de tarefas</h1>
+            <form id="add-task-form">
+                <p id="prox"><label for="task-title">Salve a sua próxima tarefa:</label></p>
+                <input type="text" placeholder="Oque você vai fazer?" id="task-title" autocomplete="off">
+                <button id="add-btn" type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <article id="tasks-list-container">
+        <h2>Estas sãos as suas tarefas:</h2>
+        <ul id="task-list">
+            <li class="task-box template hide">
+                <span id="task-title"></span>
+                <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+            </li>
+        </ul>
+    </article>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
